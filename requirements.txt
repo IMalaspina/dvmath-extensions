@@ -1,0 +1,17 @@
+# DV-Mathematics Extensions - Requirements
+
+# Core dependencies
+numpy>=1.24.0
+
+# DV-Mathematics core library
+# Note: Install from main repository
+# git+https://github.com/IMalaspina/dvmath.git
+
+# For testing
+pytest>=7.0.0
+
+# For data handling
+json5>=0.9.0
+
+# For documentation
+markdown>=3.4.0

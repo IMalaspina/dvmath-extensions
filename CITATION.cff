@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Malaspina"
+    given-names: "Ivano Franco"
+title: "DV-Mathematics Extensions: Consistency of DV¹⁶ via Partial Singularity Treatment"
+version: 1.0.0
+date-released: 2025-12-07
+url: "https://github.com/IMalaspina/dvmath-extensions"
+repository-code: "https://github.com/IMalaspina/dvmath-extensions"
+keywords:
+  - mathematics
+  - algebra
+  - Cayley-Dickson construction
+  - sedenions
+  - octonions
+  - zero divisors
+  - singularity treatment
+license: "To be determined"
+abstract: >
+  This repository extends the DV-Mathematics framework to 16 dimensions
+  with a novel method called Partial Singularity Treatment (ASTO Variant 5).
+  We demonstrate that the Cayley-Dickson construction can be consistently
+  extended beyond octonions, resolving all 336 systematically generated
+  zero divisors with 100% success rate. The method is formally proven
+  and empirically validated.
