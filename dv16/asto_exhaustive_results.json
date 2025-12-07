@@ -1,0 +1,5051 @@
+{
+  "test_info": {
+    "timestamp": "2025-12-07T01:06:44.958515",
+    "total_tested": 336,
+    "success_count": 336,
+    "failure_count": 0,
+    "success_rate": 100.0
+  },
+  "results": [
+    {
+      "id": 1,
+      "pattern": "(e1 + e10) * (e4 - e15)",
+      "indices": [
+        1,
+        10,
+        4,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 2,
+      "pattern": "(e1 + e10) * (e6 - e13)",
+      "indices": [
+        1,
+        10,
+        6,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 3,
+      "pattern": "(e1 + e10) * (e13 - e6)",
+      "indices": [
+        1,
+        10,
+        13,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 4,
+      "pattern": "(e1 + e10) * (e15 - e4)",
+      "indices": [
+        1,
+        10,
+        15,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 5,
+      "pattern": "(e1 + e11) * (e6 - e12)",
+      "indices": [
+        1,
+        11,
+        6,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 6,
+      "pattern": "(e1 + e11) * (e7 - e13)",
+      "indices": [
+        1,
+        11,
+        7,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 7,
+      "pattern": "(e1 + e11) * (e12 - e6)",
+      "indices": [
+        1,
+        11,
+        12,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 8,
+      "pattern": "(e1 + e11) * (e13 - e7)",
+      "indices": [
+        1,
+        11,
+        13,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 9,
+      "pattern": "(e1 + e12) * (e3 - e14)",
+      "indices": [
+        1,
+        12,
+        3,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 10,
+      "pattern": "(e1 + e12) * (e7 - e10)",
+      "indices": [
+        1,
+        12,
+        7,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 11,
+      "pattern": "(e1 + e12) * (e10 - e7)",
+      "indices": [
+        1,
+        12,
+        10,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 12,
+      "pattern": "(e1 + e12) * (e14 - e3)",
+      "indices": [
+        1,
+        12,
+        14,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 13,
+      "pattern": "(e1 + e13) * (e2 - e14)",
+      "indices": [
+        1,
+        13,
+        2,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 14,
+      "pattern": "(e1 + e13) * (e3 - e15)",
+      "indices": [
+        1,
+        13,
+        3,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 15,
+      "pattern": "(e1 + e13) * (e14 - e2)",
+      "indices": [
+        1,
+        13,
+        14,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 16,
+      "pattern": "(e1 + e13) * (e15 - e3)",
+      "indices": [
+        1,
+        13,
+        15,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 17,
+      "pattern": "(e1 + e14) * (e4 - e11)",
+      "indices": [
+        1,
+        14,
+        4,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 18,
+      "pattern": "(e1 + e14) * (e5 - e10)",
+      "indices": [
+        1,
+        14,
+        5,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 19,
+      "pattern": "(e1 + e14) * (e10 - e5)",
+      "indices": [
+        1,
+        14,
+        10,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 20,
+      "pattern": "(e1 + e14) * (e11 - e4)",
+      "indices": [
+        1,
+        14,
+        11,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 21,
+      "pattern": "(e1 + e15) * (e2 - e12)",
+      "indices": [
+        1,
+        15,
+        2,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 22,
+      "pattern": "(e1 + e15) * (e5 - e11)",
+      "indices": [
+        1,
+        15,
+        5,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 23,
+      "pattern": "(e1 + e15) * (e11 - e5)",
+      "indices": [
+        1,
+        15,
+        11,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 24,
+      "pattern": "(e1 + e15) * (e12 - e2)",
+      "indices": [
+        1,
+        15,
+        12,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 25,
+      "pattern": "(e2 + e9) * (e5 - e14)",
+      "indices": [
+        2,
+        9,
+        5,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 26,
+      "pattern": "(e2 + e9) * (e7 - e12)",
+      "indices": [
+        2,
+        9,
+        7,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 27,
+      "pattern": "(e2 + e9) * (e12 - e7)",
+      "indices": [
+        2,
+        9,
+        12,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 28,
+      "pattern": "(e2 + e9) * (e14 - e5)",
+      "indices": [
+        2,
+        9,
+        14,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 29,
+      "pattern": "(e2 + e11) * (e4 - e13)",
+      "indices": [
+        2,
+        11,
+        4,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 30,
+      "pattern": "(e2 + e11) * (e7 - e14)",
+      "indices": [
+        2,
+        11,
+        7,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 31,
+      "pattern": "(e2 + e11) * (e13 - e4)",
+      "indices": [
+        2,
+        11,
+        13,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 32,
+      "pattern": "(e2 + e11) * (e14 - e7)",
+      "indices": [
+        2,
+        11,
+        14,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 33,
+      "pattern": "(e2 + e12) * (e1 - e15)",
+      "indices": [
+        2,
+        12,
+        1,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 34,
+      "pattern": "(e2 + e12) * (e5 - e11)",
+      "indices": [
+        2,
+        12,
+        5,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 35,
+      "pattern": "(e2 + e12) * (e11 - e5)",
+      "indices": [
+        2,
+        12,
+        11,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 36,
+      "pattern": "(e2 + e12) * (e15 - e1)",
+      "indices": [
+        2,
+        12,
+        15,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 37,
+      "pattern": "(e2 + e13) * (e3 - e12)",
+      "indices": [
+        2,
+        13,
+        3,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 38,
+      "pattern": "(e2 + e13) * (e6 - e9)",
+      "indices": [
+        2,
+        13,
+        6,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 39,
+      "pattern": "(e2 + e13) * (e9 - e6)",
+      "indices": [
+        2,
+        13,
+        9,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 40,
+      "pattern": "(e2 + e13) * (e12 - e3)",
+      "indices": [
+        2,
+        13,
+        12,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 41,
+      "pattern": "(e2 + e14) * (e1 - e13)",
+      "indices": [
+        2,
+        14,
+        1,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 42,
+      "pattern": "(e2 + e14) * (e3 - e15)",
+      "indices": [
+        2,
+        14,
+        3,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 43,
+      "pattern": "(e2 + e14) * (e13 - e1)",
+      "indices": [
+        2,
+        14,
+        13,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 44,
+      "pattern": "(e2 + e14) * (e15 - e3)",
+      "indices": [
+        2,
+        14,
+        15,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 45,
+      "pattern": "(e2 + e15) * (e4 - e9)",
+      "indices": [
+        2,
+        15,
+        4,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 46,
+      "pattern": "(e2 + e15) * (e6 - e11)",
+      "indices": [
+        2,
+        15,
+        6,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 47,
+      "pattern": "(e2 + e15) * (e9 - e4)",
+      "indices": [
+        2,
+        15,
+        9,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 48,
+      "pattern": "(e2 + e15) * (e11 - e6)",
+      "indices": [
+        2,
+        15,
+        11,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 49,
+      "pattern": "(e3 + e9) * (e4 - e14)",
+      "indices": [
+        3,
+        9,
+        4,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 50,
+      "pattern": "(e3 + e9) * (e5 - e15)",
+      "indices": [
+        3,
+        9,
+        5,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 51,
+      "pattern": "(e3 + e9) * (e14 - e4)",
+      "indices": [
+        3,
+        9,
+        14,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 52,
+      "pattern": "(e3 + e9) * (e15 - e5)",
+      "indices": [
+        3,
+        9,
+        15,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 53,
+      "pattern": "(e3 + e10) * (e5 - e12)",
+      "indices": [
+        3,
+        10,
+        5,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 54,
+      "pattern": "(e3 + e10) * (e6 - e15)",
+      "indices": [
+        3,
+        10,
+        6,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 55,
+      "pattern": "(e3 + e10) * (e12 - e5)",
+      "indices": [
+        3,
+        10,
+        12,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 56,
+      "pattern": "(e3 + e10) * (e15 - e6)",
+      "indices": [
+        3,
+        10,
+        15,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 57,
+      "pattern": "(e3 + e12) * (e2 - e13)",
+      "indices": [
+        3,
+        12,
+        2,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 58,
+      "pattern": "(e3 + e12) * (e6 - e9)",
+      "indices": [
+        3,
+        12,
+        6,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 59,
+      "pattern": "(e3 + e12) * (e9 - e6)",
+      "indices": [
+        3,
+        12,
+        9,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 60,
+      "pattern": "(e3 + e12) * (e13 - e2)",
+      "indices": [
+        3,
+        12,
+        13,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 61,
+      "pattern": "(e3 + e13) * (e4 - e10)",
+      "indices": [
+        3,
+        13,
+        4,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 62,
+      "pattern": "(e3 + e13) * (e7 - e9)",
+      "indices": [
+        3,
+        13,
+        7,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 63,
+      "pattern": "(e3 + e13) * (e9 - e7)",
+      "indices": [
+        3,
+        13,
+        9,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 64,
+      "pattern": "(e3 + e13) * (e10 - e4)",
+      "indices": [
+        3,
+        13,
+        10,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 65,
+      "pattern": "(e3 + e14) * (e1 - e12)",
+      "indices": [
+        3,
+        14,
+        1,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 66,
+      "pattern": "(e3 + e14) * (e7 - e10)",
+      "indices": [
+        3,
+        14,
+        7,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 67,
+      "pattern": "(e3 + e14) * (e10 - e7)",
+      "indices": [
+        3,
+        14,
+        10,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 68,
+      "pattern": "(e3 + e14) * (e12 - e1)",
+      "indices": [
+        3,
+        14,
+        12,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 69,
+      "pattern": "(e3 + e15) * (e1 - e13)",
+      "indices": [
+        3,
+        15,
+        1,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 70,
+      "pattern": "(e3 + e15) * (e2 - e14)",
+      "indices": [
+        3,
+        15,
+        2,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 71,
+      "pattern": "(e3 + e15) * (e13 - e1)",
+      "indices": [
+        3,
+        15,
+        13,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 72,
+      "pattern": "(e3 + e15) * (e14 - e2)",
+      "indices": [
+        3,
+        15,
+        14,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 73,
+      "pattern": "(e4 + e9) * (e2 - e15)",
+      "indices": [
+        4,
+        9,
+        2,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 74,
+      "pattern": "(e4 + e9) * (e6 - e11)",
+      "indices": [
+        4,
+        9,
+        6,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 75,
+      "pattern": "(e4 + e9) * (e11 - e6)",
+      "indices": [
+        4,
+        9,
+        11,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 76,
+      "pattern": "(e4 + e9) * (e15 - e2)",
+      "indices": [
+        4,
+        9,
+        15,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 77,
+      "pattern": "(e4 + e10) * (e3 - e13)",
+      "indices": [
+        4,
+        10,
+        3,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 78,
+      "pattern": "(e4 + e10) * (e7 - e9)",
+      "indices": [
+        4,
+        10,
+        7,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 79,
+      "pattern": "(e4 + e10) * (e9 - e7)",
+      "indices": [
+        4,
+        10,
+        9,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 80,
+      "pattern": "(e4 + e10) * (e13 - e3)",
+      "indices": [
+        4,
+        10,
+        13,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 81,
+      "pattern": "(e4 + e11) * (e1 - e14)",
+      "indices": [
+        4,
+        11,
+        1,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 82,
+      "pattern": "(e4 + e11) * (e5 - e10)",
+      "indices": [
+        4,
+        11,
+        5,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 83,
+      "pattern": "(e4 + e11) * (e10 - e5)",
+      "indices": [
+        4,
+        11,
+        10,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 84,
+      "pattern": "(e4 + e11) * (e14 - e1)",
+      "indices": [
+        4,
+        11,
+        14,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 85,
+      "pattern": "(e4 + e13) * (e2 - e11)",
+      "indices": [
+        4,
+        13,
+        2,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 86,
+      "pattern": "(e4 + e13) * (e7 - e14)",
+      "indices": [
+        4,
+        13,
+        7,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 87,
+      "pattern": "(e4 + e13) * (e11 - e2)",
+      "indices": [
+        4,
+        13,
+        11,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 88,
+      "pattern": "(e4 + e13) * (e14 - e7)",
+      "indices": [
+        4,
+        13,
+        14,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 89,
+      "pattern": "(e4 + e14) * (e3 - e9)",
+      "indices": [
+        4,
+        14,
+        3,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 90,
+      "pattern": "(e4 + e14) * (e5 - e15)",
+      "indices": [
+        4,
+        14,
+        5,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 91,
+      "pattern": "(e4 + e14) * (e9 - e3)",
+      "indices": [
+        4,
+        14,
+        9,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 92,
+      "pattern": "(e4 + e14) * (e15 - e5)",
+      "indices": [
+        4,
+        14,
+        15,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 93,
+      "pattern": "(e4 + e15) * (e1 - e10)",
+      "indices": [
+        4,
+        15,
+        1,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 94,
+      "pattern": "(e4 + e15) * (e6 - e13)",
+      "indices": [
+        4,
+        15,
+        6,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 95,
+      "pattern": "(e4 + e15) * (e10 - e1)",
+      "indices": [
+        4,
+        15,
+        10,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 96,
+      "pattern": "(e4 + e15) * (e13 - e6)",
+      "indices": [
+        4,
+        15,
+        13,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 97,
+      "pattern": "(e5 + e9) * (e6 - e10)",
+      "indices": [
+        5,
+        9,
+        6,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 98,
+      "pattern": "(e5 + e9) * (e7 - e11)",
+      "indices": [
+        5,
+        9,
+        7,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 99,
+      "pattern": "(e5 + e9) * (e10 - e6)",
+      "indices": [
+        5,
+        9,
+        10,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 100,
+      "pattern": "(e5 + e9) * (e11 - e7)",
+      "indices": [
+        5,
+        9,
+        11,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 101,
+      "pattern": "(e5 + e10) * (e1 - e14)",
+      "indices": [
+        5,
+        10,
+        1,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 102,
+      "pattern": "(e5 + e10) * (e4 - e11)",
+      "indices": [
+        5,
+        10,
+        4,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 103,
+      "pattern": "(e5 + e10) * (e11 - e4)",
+      "indices": [
+        5,
+        10,
+        11,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 104,
+      "pattern": "(e5 + e10) * (e14 - e1)",
+      "indices": [
+        5,
+        10,
+        14,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 105,
+      "pattern": "(e5 + e11) * (e1 - e15)",
+      "indices": [
+        5,
+        11,
+        1,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 106,
+      "pattern": "(e5 + e11) * (e2 - e12)",
+      "indices": [
+        5,
+        11,
+        2,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 107,
+      "pattern": "(e5 + e11) * (e12 - e2)",
+      "indices": [
+        5,
+        11,
+        12,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 108,
+      "pattern": "(e5 + e11) * (e15 - e1)",
+      "indices": [
+        5,
+        11,
+        15,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 109,
+      "pattern": "(e5 + e12) * (e3 - e10)",
+      "indices": [
+        5,
+        12,
+        3,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 110,
+      "pattern": "(e5 + e12) * (e6 - e15)",
+      "indices": [
+        5,
+        12,
+        6,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 111,
+      "pattern": "(e5 + e12) * (e10 - e3)",
+      "indices": [
+        5,
+        12,
+        10,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 112,
+      "pattern": "(e5 + e12) * (e15 - e6)",
+      "indices": [
+        5,
+        12,
+        15,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 113,
+      "pattern": "(e5 + e14) * (e2 - e9)",
+      "indices": [
+        5,
+        14,
+        2,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 114,
+      "pattern": "(e5 + e14) * (e7 - e12)",
+      "indices": [
+        5,
+        14,
+        7,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 115,
+      "pattern": "(e5 + e14) * (e9 - e2)",
+      "indices": [
+        5,
+        14,
+        9,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 116,
+      "pattern": "(e5 + e14) * (e12 - e7)",
+      "indices": [
+        5,
+        14,
+        12,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 117,
+      "pattern": "(e5 + e15) * (e3 - e9)",
+      "indices": [
+        5,
+        15,
+        3,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 118,
+      "pattern": "(e5 + e15) * (e4 - e14)",
+      "indices": [
+        5,
+        15,
+        4,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 119,
+      "pattern": "(e5 + e15) * (e9 - e3)",
+      "indices": [
+        5,
+        15,
+        9,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 120,
+      "pattern": "(e5 + e15) * (e14 - e4)",
+      "indices": [
+        5,
+        15,
+        14,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 121,
+      "pattern": "(e6 + e9) * (e2 - e13)",
+      "indices": [
+        6,
+        9,
+        2,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 122,
+      "pattern": "(e6 + e9) * (e3 - e12)",
+      "indices": [
+        6,
+        9,
+        3,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 123,
+      "pattern": "(e6 + e9) * (e12 - e3)",
+      "indices": [
+        6,
+        9,
+        12,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 124,
+      "pattern": "(e6 + e9) * (e13 - e2)",
+      "indices": [
+        6,
+        9,
+        13,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 125,
+      "pattern": "(e6 + e10) * (e5 - e9)",
+      "indices": [
+        6,
+        10,
+        5,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 126,
+      "pattern": "(e6 + e10) * (e7 - e11)",
+      "indices": [
+        6,
+        10,
+        7,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 127,
+      "pattern": "(e6 + e10) * (e9 - e5)",
+      "indices": [
+        6,
+        10,
+        9,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 128,
+      "pattern": "(e6 + e10) * (e11 - e7)",
+      "indices": [
+        6,
+        10,
+        11,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 129,
+      "pattern": "(e6 + e11) * (e2 - e15)",
+      "indices": [
+        6,
+        11,
+        2,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 130,
+      "pattern": "(e6 + e11) * (e4 - e9)",
+      "indices": [
+        6,
+        11,
+        4,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 131,
+      "pattern": "(e6 + e11) * (e9 - e4)",
+      "indices": [
+        6,
+        11,
+        9,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 132,
+      "pattern": "(e6 + e11) * (e15 - e2)",
+      "indices": [
+        6,
+        11,
+        15,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 133,
+      "pattern": "(e6 + e12) * (e1 - e11)",
+      "indices": [
+        6,
+        12,
+        1,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 134,
+      "pattern": "(e6 + e12) * (e7 - e13)",
+      "indices": [
+        6,
+        12,
+        7,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 135,
+      "pattern": "(e6 + e12) * (e11 - e1)",
+      "indices": [
+        6,
+        12,
+        11,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 136,
+      "pattern": "(e6 + e12) * (e13 - e7)",
+      "indices": [
+        6,
+        12,
+        13,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 137,
+      "pattern": "(e6 + e13) * (e1 - e10)",
+      "indices": [
+        6,
+        13,
+        1,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 138,
+      "pattern": "(e6 + e13) * (e4 - e15)",
+      "indices": [
+        6,
+        13,
+        4,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 139,
+      "pattern": "(e6 + e13) * (e10 - e1)",
+      "indices": [
+        6,
+        13,
+        10,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 140,
+      "pattern": "(e6 + e13) * (e15 - e4)",
+      "indices": [
+        6,
+        13,
+        15,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 141,
+      "pattern": "(e6 + e15) * (e3 - e10)",
+      "indices": [
+        6,
+        15,
+        3,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 142,
+      "pattern": "(e6 + e15) * (e5 - e12)",
+      "indices": [
+        6,
+        15,
+        5,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 143,
+      "pattern": "(e6 + e15) * (e10 - e3)",
+      "indices": [
+        6,
+        15,
+        10,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 144,
+      "pattern": "(e6 + e15) * (e12 - e5)",
+      "indices": [
+        6,
+        15,
+        12,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 145,
+      "pattern": "(e7 + e9) * (e3 - e13)",
+      "indices": [
+        7,
+        9,
+        3,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 146,
+      "pattern": "(e7 + e9) * (e4 - e10)",
+      "indices": [
+        7,
+        9,
+        4,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 147,
+      "pattern": "(e7 + e9) * (e10 - e4)",
+      "indices": [
+        7,
+        9,
+        10,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 148,
+      "pattern": "(e7 + e9) * (e13 - e3)",
+      "indices": [
+        7,
+        9,
+        13,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 149,
+      "pattern": "(e7 + e10) * (e1 - e12)",
+      "indices": [
+        7,
+        10,
+        1,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 150,
+      "pattern": "(e7 + e10) * (e3 - e14)",
+      "indices": [
+        7,
+        10,
+        3,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 151,
+      "pattern": "(e7 + e10) * (e12 - e1)",
+      "indices": [
+        7,
+        10,
+        12,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 152,
+      "pattern": "(e7 + e10) * (e14 - e3)",
+      "indices": [
+        7,
+        10,
+        14,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 153,
+      "pattern": "(e7 + e11) * (e5 - e9)",
+      "indices": [
+        7,
+        11,
+        5,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 154,
+      "pattern": "(e7 + e11) * (e6 - e10)",
+      "indices": [
+        7,
+        11,
+        6,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 155,
+      "pattern": "(e7 + e11) * (e9 - e5)",
+      "indices": [
+        7,
+        11,
+        9,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 156,
+      "pattern": "(e7 + e11) * (e10 - e6)",
+      "indices": [
+        7,
+        11,
+        10,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 157,
+      "pattern": "(e7 + e12) * (e2 - e9)",
+      "indices": [
+        7,
+        12,
+        2,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 158,
+      "pattern": "(e7 + e12) * (e5 - e14)",
+      "indices": [
+        7,
+        12,
+        5,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 159,
+      "pattern": "(e7 + e12) * (e9 - e2)",
+      "indices": [
+        7,
+        12,
+        9,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 160,
+      "pattern": "(e7 + e12) * (e14 - e5)",
+      "indices": [
+        7,
+        12,
+        14,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 161,
+      "pattern": "(e7 + e13) * (e1 - e11)",
+      "indices": [
+        7,
+        13,
+        1,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 162,
+      "pattern": "(e7 + e13) * (e6 - e12)",
+      "indices": [
+        7,
+        13,
+        6,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 163,
+      "pattern": "(e7 + e13) * (e11 - e1)",
+      "indices": [
+        7,
+        13,
+        11,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 164,
+      "pattern": "(e7 + e13) * (e12 - e6)",
+      "indices": [
+        7,
+        13,
+        12,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 165,
+      "pattern": "(e7 + e14) * (e2 - e11)",
+      "indices": [
+        7,
+        14,
+        2,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 166,
+      "pattern": "(e7 + e14) * (e4 - e13)",
+      "indices": [
+        7,
+        14,
+        4,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 167,
+      "pattern": "(e7 + e14) * (e11 - e2)",
+      "indices": [
+        7,
+        14,
+        11,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 168,
+      "pattern": "(e7 + e14) * (e13 - e4)",
+      "indices": [
+        7,
+        14,
+        13,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 169,
+      "pattern": "(e9 + e2) * (e5 - e14)",
+      "indices": [
+        9,
+        2,
+        5,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 170,
+      "pattern": "(e9 + e2) * (e7 - e12)",
+      "indices": [
+        9,
+        2,
+        7,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 171,
+      "pattern": "(e9 + e2) * (e12 - e7)",
+      "indices": [
+        9,
+        2,
+        12,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 172,
+      "pattern": "(e9 + e2) * (e14 - e5)",
+      "indices": [
+        9,
+        2,
+        14,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 173,
+      "pattern": "(e9 + e3) * (e4 - e14)",
+      "indices": [
+        9,
+        3,
+        4,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 174,
+      "pattern": "(e9 + e3) * (e5 - e15)",
+      "indices": [
+        9,
+        3,
+        5,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 175,
+      "pattern": "(e9 + e3) * (e14 - e4)",
+      "indices": [
+        9,
+        3,
+        14,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 176,
+      "pattern": "(e9 + e3) * (e15 - e5)",
+      "indices": [
+        9,
+        3,
+        15,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 177,
+      "pattern": "(e9 + e4) * (e2 - e15)",
+      "indices": [
+        9,
+        4,
+        2,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 178,
+      "pattern": "(e9 + e4) * (e6 - e11)",
+      "indices": [
+        9,
+        4,
+        6,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 179,
+      "pattern": "(e9 + e4) * (e11 - e6)",
+      "indices": [
+        9,
+        4,
+        11,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 180,
+      "pattern": "(e9 + e4) * (e15 - e2)",
+      "indices": [
+        9,
+        4,
+        15,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 181,
+      "pattern": "(e9 + e5) * (e6 - e10)",
+      "indices": [
+        9,
+        5,
+        6,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 182,
+      "pattern": "(e9 + e5) * (e7 - e11)",
+      "indices": [
+        9,
+        5,
+        7,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 183,
+      "pattern": "(e9 + e5) * (e10 - e6)",
+      "indices": [
+        9,
+        5,
+        10,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 184,
+      "pattern": "(e9 + e5) * (e11 - e7)",
+      "indices": [
+        9,
+        5,
+        11,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 185,
+      "pattern": "(e9 + e6) * (e2 - e13)",
+      "indices": [
+        9,
+        6,
+        2,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 186,
+      "pattern": "(e9 + e6) * (e3 - e12)",
+      "indices": [
+        9,
+        6,
+        3,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 187,
+      "pattern": "(e9 + e6) * (e12 - e3)",
+      "indices": [
+        9,
+        6,
+        12,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 188,
+      "pattern": "(e9 + e6) * (e13 - e2)",
+      "indices": [
+        9,
+        6,
+        13,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 189,
+      "pattern": "(e9 + e7) * (e3 - e13)",
+      "indices": [
+        9,
+        7,
+        3,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 190,
+      "pattern": "(e9 + e7) * (e4 - e10)",
+      "indices": [
+        9,
+        7,
+        4,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 191,
+      "pattern": "(e9 + e7) * (e10 - e4)",
+      "indices": [
+        9,
+        7,
+        10,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 192,
+      "pattern": "(e9 + e7) * (e13 - e3)",
+      "indices": [
+        9,
+        7,
+        13,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 193,
+      "pattern": "(e10 + e1) * (e4 - e15)",
+      "indices": [
+        10,
+        1,
+        4,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 194,
+      "pattern": "(e10 + e1) * (e6 - e13)",
+      "indices": [
+        10,
+        1,
+        6,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 195,
+      "pattern": "(e10 + e1) * (e13 - e6)",
+      "indices": [
+        10,
+        1,
+        13,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 196,
+      "pattern": "(e10 + e1) * (e15 - e4)",
+      "indices": [
+        10,
+        1,
+        15,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 197,
+      "pattern": "(e10 + e3) * (e5 - e12)",
+      "indices": [
+        10,
+        3,
+        5,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 198,
+      "pattern": "(e10 + e3) * (e6 - e15)",
+      "indices": [
+        10,
+        3,
+        6,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 199,
+      "pattern": "(e10 + e3) * (e12 - e5)",
+      "indices": [
+        10,
+        3,
+        12,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 200,
+      "pattern": "(e10 + e3) * (e15 - e6)",
+      "indices": [
+        10,
+        3,
+        15,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 201,
+      "pattern": "(e10 + e4) * (e3 - e13)",
+      "indices": [
+        10,
+        4,
+        3,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 202,
+      "pattern": "(e10 + e4) * (e7 - e9)",
+      "indices": [
+        10,
+        4,
+        7,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 203,
+      "pattern": "(e10 + e4) * (e9 - e7)",
+      "indices": [
+        10,
+        4,
+        9,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 204,
+      "pattern": "(e10 + e4) * (e13 - e3)",
+      "indices": [
+        10,
+        4,
+        13,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 205,
+      "pattern": "(e10 + e5) * (e1 - e14)",
+      "indices": [
+        10,
+        5,
+        1,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 206,
+      "pattern": "(e10 + e5) * (e4 - e11)",
+      "indices": [
+        10,
+        5,
+        4,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 207,
+      "pattern": "(e10 + e5) * (e11 - e4)",
+      "indices": [
+        10,
+        5,
+        11,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 208,
+      "pattern": "(e10 + e5) * (e14 - e1)",
+      "indices": [
+        10,
+        5,
+        14,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 209,
+      "pattern": "(e10 + e6) * (e5 - e9)",
+      "indices": [
+        10,
+        6,
+        5,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 210,
+      "pattern": "(e10 + e6) * (e7 - e11)",
+      "indices": [
+        10,
+        6,
+        7,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 211,
+      "pattern": "(e10 + e6) * (e9 - e5)",
+      "indices": [
+        10,
+        6,
+        9,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 212,
+      "pattern": "(e10 + e6) * (e11 - e7)",
+      "indices": [
+        10,
+        6,
+        11,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 213,
+      "pattern": "(e10 + e7) * (e1 - e12)",
+      "indices": [
+        10,
+        7,
+        1,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 214,
+      "pattern": "(e10 + e7) * (e3 - e14)",
+      "indices": [
+        10,
+        7,
+        3,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 215,
+      "pattern": "(e10 + e7) * (e12 - e1)",
+      "indices": [
+        10,
+        7,
+        12,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 216,
+      "pattern": "(e10 + e7) * (e14 - e3)",
+      "indices": [
+        10,
+        7,
+        14,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 217,
+      "pattern": "(e11 + e1) * (e6 - e12)",
+      "indices": [
+        11,
+        1,
+        6,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 218,
+      "pattern": "(e11 + e1) * (e7 - e13)",
+      "indices": [
+        11,
+        1,
+        7,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 219,
+      "pattern": "(e11 + e1) * (e12 - e6)",
+      "indices": [
+        11,
+        1,
+        12,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 220,
+      "pattern": "(e11 + e1) * (e13 - e7)",
+      "indices": [
+        11,
+        1,
+        13,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 221,
+      "pattern": "(e11 + e2) * (e4 - e13)",
+      "indices": [
+        11,
+        2,
+        4,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 222,
+      "pattern": "(e11 + e2) * (e7 - e14)",
+      "indices": [
+        11,
+        2,
+        7,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 223,
+      "pattern": "(e11 + e2) * (e13 - e4)",
+      "indices": [
+        11,
+        2,
+        13,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 224,
+      "pattern": "(e11 + e2) * (e14 - e7)",
+      "indices": [
+        11,
+        2,
+        14,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 225,
+      "pattern": "(e11 + e4) * (e1 - e14)",
+      "indices": [
+        11,
+        4,
+        1,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 226,
+      "pattern": "(e11 + e4) * (e5 - e10)",
+      "indices": [
+        11,
+        4,
+        5,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 227,
+      "pattern": "(e11 + e4) * (e10 - e5)",
+      "indices": [
+        11,
+        4,
+        10,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 228,
+      "pattern": "(e11 + e4) * (e14 - e1)",
+      "indices": [
+        11,
+        4,
+        14,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 229,
+      "pattern": "(e11 + e5) * (e1 - e15)",
+      "indices": [
+        11,
+        5,
+        1,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 230,
+      "pattern": "(e11 + e5) * (e2 - e12)",
+      "indices": [
+        11,
+        5,
+        2,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 231,
+      "pattern": "(e11 + e5) * (e12 - e2)",
+      "indices": [
+        11,
+        5,
+        12,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 232,
+      "pattern": "(e11 + e5) * (e15 - e1)",
+      "indices": [
+        11,
+        5,
+        15,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 233,
+      "pattern": "(e11 + e6) * (e2 - e15)",
+      "indices": [
+        11,
+        6,
+        2,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 234,
+      "pattern": "(e11 + e6) * (e4 - e9)",
+      "indices": [
+        11,
+        6,
+        4,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 235,
+      "pattern": "(e11 + e6) * (e9 - e4)",
+      "indices": [
+        11,
+        6,
+        9,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 236,
+      "pattern": "(e11 + e6) * (e15 - e2)",
+      "indices": [
+        11,
+        6,
+        15,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 237,
+      "pattern": "(e11 + e7) * (e5 - e9)",
+      "indices": [
+        11,
+        7,
+        5,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 238,
+      "pattern": "(e11 + e7) * (e6 - e10)",
+      "indices": [
+        11,
+        7,
+        6,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 239,
+      "pattern": "(e11 + e7) * (e9 - e5)",
+      "indices": [
+        11,
+        7,
+        9,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 240,
+      "pattern": "(e11 + e7) * (e10 - e6)",
+      "indices": [
+        11,
+        7,
+        10,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 241,
+      "pattern": "(e12 + e1) * (e3 - e14)",
+      "indices": [
+        12,
+        1,
+        3,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 242,
+      "pattern": "(e12 + e1) * (e7 - e10)",
+      "indices": [
+        12,
+        1,
+        7,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 243,
+      "pattern": "(e12 + e1) * (e10 - e7)",
+      "indices": [
+        12,
+        1,
+        10,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 244,
+      "pattern": "(e12 + e1) * (e14 - e3)",
+      "indices": [
+        12,
+        1,
+        14,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 245,
+      "pattern": "(e12 + e2) * (e1 - e15)",
+      "indices": [
+        12,
+        2,
+        1,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 246,
+      "pattern": "(e12 + e2) * (e5 - e11)",
+      "indices": [
+        12,
+        2,
+        5,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 247,
+      "pattern": "(e12 + e2) * (e11 - e5)",
+      "indices": [
+        12,
+        2,
+        11,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 248,
+      "pattern": "(e12 + e2) * (e15 - e1)",
+      "indices": [
+        12,
+        2,
+        15,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 249,
+      "pattern": "(e12 + e3) * (e2 - e13)",
+      "indices": [
+        12,
+        3,
+        2,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 250,
+      "pattern": "(e12 + e3) * (e6 - e9)",
+      "indices": [
+        12,
+        3,
+        6,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 251,
+      "pattern": "(e12 + e3) * (e9 - e6)",
+      "indices": [
+        12,
+        3,
+        9,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 252,
+      "pattern": "(e12 + e3) * (e13 - e2)",
+      "indices": [
+        12,
+        3,
+        13,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 253,
+      "pattern": "(e12 + e5) * (e3 - e10)",
+      "indices": [
+        12,
+        5,
+        3,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 254,
+      "pattern": "(e12 + e5) * (e6 - e15)",
+      "indices": [
+        12,
+        5,
+        6,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 255,
+      "pattern": "(e12 + e5) * (e10 - e3)",
+      "indices": [
+        12,
+        5,
+        10,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 256,
+      "pattern": "(e12 + e5) * (e15 - e6)",
+      "indices": [
+        12,
+        5,
+        15,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 257,
+      "pattern": "(e12 + e6) * (e1 - e11)",
+      "indices": [
+        12,
+        6,
+        1,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 258,
+      "pattern": "(e12 + e6) * (e7 - e13)",
+      "indices": [
+        12,
+        6,
+        7,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 259,
+      "pattern": "(e12 + e6) * (e11 - e1)",
+      "indices": [
+        12,
+        6,
+        11,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 260,
+      "pattern": "(e12 + e6) * (e13 - e7)",
+      "indices": [
+        12,
+        6,
+        13,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 261,
+      "pattern": "(e12 + e7) * (e2 - e9)",
+      "indices": [
+        12,
+        7,
+        2,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 262,
+      "pattern": "(e12 + e7) * (e5 - e14)",
+      "indices": [
+        12,
+        7,
+        5,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 263,
+      "pattern": "(e12 + e7) * (e9 - e2)",
+      "indices": [
+        12,
+        7,
+        9,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 264,
+      "pattern": "(e12 + e7) * (e14 - e5)",
+      "indices": [
+        12,
+        7,
+        14,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 265,
+      "pattern": "(e13 + e1) * (e2 - e14)",
+      "indices": [
+        13,
+        1,
+        2,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 266,
+      "pattern": "(e13 + e1) * (e3 - e15)",
+      "indices": [
+        13,
+        1,
+        3,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 267,
+      "pattern": "(e13 + e1) * (e14 - e2)",
+      "indices": [
+        13,
+        1,
+        14,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 268,
+      "pattern": "(e13 + e1) * (e15 - e3)",
+      "indices": [
+        13,
+        1,
+        15,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 269,
+      "pattern": "(e13 + e2) * (e3 - e12)",
+      "indices": [
+        13,
+        2,
+        3,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 270,
+      "pattern": "(e13 + e2) * (e6 - e9)",
+      "indices": [
+        13,
+        2,
+        6,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 271,
+      "pattern": "(e13 + e2) * (e9 - e6)",
+      "indices": [
+        13,
+        2,
+        9,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 272,
+      "pattern": "(e13 + e2) * (e12 - e3)",
+      "indices": [
+        13,
+        2,
+        12,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 273,
+      "pattern": "(e13 + e3) * (e4 - e10)",
+      "indices": [
+        13,
+        3,
+        4,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 274,
+      "pattern": "(e13 + e3) * (e7 - e9)",
+      "indices": [
+        13,
+        3,
+        7,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 275,
+      "pattern": "(e13 + e3) * (e9 - e7)",
+      "indices": [
+        13,
+        3,
+        9,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 276,
+      "pattern": "(e13 + e3) * (e10 - e4)",
+      "indices": [
+        13,
+        3,
+        10,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 277,
+      "pattern": "(e13 + e4) * (e2 - e11)",
+      "indices": [
+        13,
+        4,
+        2,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 278,
+      "pattern": "(e13 + e4) * (e7 - e14)",
+      "indices": [
+        13,
+        4,
+        7,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 279,
+      "pattern": "(e13 + e4) * (e11 - e2)",
+      "indices": [
+        13,
+        4,
+        11,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 280,
+      "pattern": "(e13 + e4) * (e14 - e7)",
+      "indices": [
+        13,
+        4,
+        14,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 281,
+      "pattern": "(e13 + e6) * (e1 - e10)",
+      "indices": [
+        13,
+        6,
+        1,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 282,
+      "pattern": "(e13 + e6) * (e4 - e15)",
+      "indices": [
+        13,
+        6,
+        4,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 283,
+      "pattern": "(e13 + e6) * (e10 - e1)",
+      "indices": [
+        13,
+        6,
+        10,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 284,
+      "pattern": "(e13 + e6) * (e15 - e4)",
+      "indices": [
+        13,
+        6,
+        15,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 285,
+      "pattern": "(e13 + e7) * (e1 - e11)",
+      "indices": [
+        13,
+        7,
+        1,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 286,
+      "pattern": "(e13 + e7) * (e6 - e12)",
+      "indices": [
+        13,
+        7,
+        6,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 287,
+      "pattern": "(e13 + e7) * (e11 - e1)",
+      "indices": [
+        13,
+        7,
+        11,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 288,
+      "pattern": "(e13 + e7) * (e12 - e6)",
+      "indices": [
+        13,
+        7,
+        12,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 289,
+      "pattern": "(e14 + e1) * (e4 - e11)",
+      "indices": [
+        14,
+        1,
+        4,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 290,
+      "pattern": "(e14 + e1) * (e5 - e10)",
+      "indices": [
+        14,
+        1,
+        5,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 291,
+      "pattern": "(e14 + e1) * (e10 - e5)",
+      "indices": [
+        14,
+        1,
+        10,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 292,
+      "pattern": "(e14 + e1) * (e11 - e4)",
+      "indices": [
+        14,
+        1,
+        11,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 293,
+      "pattern": "(e14 + e2) * (e1 - e13)",
+      "indices": [
+        14,
+        2,
+        1,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 294,
+      "pattern": "(e14 + e2) * (e3 - e15)",
+      "indices": [
+        14,
+        2,
+        3,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 295,
+      "pattern": "(e14 + e2) * (e13 - e1)",
+      "indices": [
+        14,
+        2,
+        13,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 296,
+      "pattern": "(e14 + e2) * (e15 - e3)",
+      "indices": [
+        14,
+        2,
+        15,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 297,
+      "pattern": "(e14 + e3) * (e1 - e12)",
+      "indices": [
+        14,
+        3,
+        1,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 298,
+      "pattern": "(e14 + e3) * (e7 - e10)",
+      "indices": [
+        14,
+        3,
+        7,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 299,
+      "pattern": "(e14 + e3) * (e10 - e7)",
+      "indices": [
+        14,
+        3,
+        10,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 300,
+      "pattern": "(e14 + e3) * (e12 - e1)",
+      "indices": [
+        14,
+        3,
+        12,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 301,
+      "pattern": "(e14 + e4) * (e3 - e9)",
+      "indices": [
+        14,
+        4,
+        3,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 302,
+      "pattern": "(e14 + e4) * (e5 - e15)",
+      "indices": [
+        14,
+        4,
+        5,
+        15
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 303,
+      "pattern": "(e14 + e4) * (e9 - e3)",
+      "indices": [
+        14,
+        4,
+        9,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 304,
+      "pattern": "(e14 + e4) * (e15 - e5)",
+      "indices": [
+        14,
+        4,
+        15,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 305,
+      "pattern": "(e14 + e5) * (e2 - e9)",
+      "indices": [
+        14,
+        5,
+        2,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 306,
+      "pattern": "(e14 + e5) * (e7 - e12)",
+      "indices": [
+        14,
+        5,
+        7,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 307,
+      "pattern": "(e14 + e5) * (e9 - e2)",
+      "indices": [
+        14,
+        5,
+        9,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 308,
+      "pattern": "(e14 + e5) * (e12 - e7)",
+      "indices": [
+        14,
+        5,
+        12,
+        7
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 309,
+      "pattern": "(e14 + e7) * (e2 - e11)",
+      "indices": [
+        14,
+        7,
+        2,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 310,
+      "pattern": "(e14 + e7) * (e4 - e13)",
+      "indices": [
+        14,
+        7,
+        4,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 311,
+      "pattern": "(e14 + e7) * (e11 - e2)",
+      "indices": [
+        14,
+        7,
+        11,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 312,
+      "pattern": "(e14 + e7) * (e13 - e4)",
+      "indices": [
+        14,
+        7,
+        13,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 313,
+      "pattern": "(e15 + e1) * (e2 - e12)",
+      "indices": [
+        15,
+        1,
+        2,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 314,
+      "pattern": "(e15 + e1) * (e5 - e11)",
+      "indices": [
+        15,
+        1,
+        5,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 315,
+      "pattern": "(e15 + e1) * (e11 - e5)",
+      "indices": [
+        15,
+        1,
+        11,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 316,
+      "pattern": "(e15 + e1) * (e12 - e2)",
+      "indices": [
+        15,
+        1,
+        12,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 317,
+      "pattern": "(e15 + e2) * (e4 - e9)",
+      "indices": [
+        15,
+        2,
+        4,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 318,
+      "pattern": "(e15 + e2) * (e6 - e11)",
+      "indices": [
+        15,
+        2,
+        6,
+        11
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 319,
+      "pattern": "(e15 + e2) * (e9 - e4)",
+      "indices": [
+        15,
+        2,
+        9,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 320,
+      "pattern": "(e15 + e2) * (e11 - e6)",
+      "indices": [
+        15,
+        2,
+        11,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 321,
+      "pattern": "(e15 + e3) * (e1 - e13)",
+      "indices": [
+        15,
+        3,
+        1,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 322,
+      "pattern": "(e15 + e3) * (e2 - e14)",
+      "indices": [
+        15,
+        3,
+        2,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 323,
+      "pattern": "(e15 + e3) * (e13 - e1)",
+      "indices": [
+        15,
+        3,
+        13,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 324,
+      "pattern": "(e15 + e3) * (e14 - e2)",
+      "indices": [
+        15,
+        3,
+        14,
+        2
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 325,
+      "pattern": "(e15 + e4) * (e1 - e10)",
+      "indices": [
+        15,
+        4,
+        1,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 326,
+      "pattern": "(e15 + e4) * (e6 - e13)",
+      "indices": [
+        15,
+        4,
+        6,
+        13
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 327,
+      "pattern": "(e15 + e4) * (e10 - e1)",
+      "indices": [
+        15,
+        4,
+        10,
+        1
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 328,
+      "pattern": "(e15 + e4) * (e13 - e6)",
+      "indices": [
+        15,
+        4,
+        13,
+        6
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 329,
+      "pattern": "(e15 + e5) * (e3 - e9)",
+      "indices": [
+        15,
+        5,
+        3,
+        9
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 330,
+      "pattern": "(e15 + e5) * (e4 - e14)",
+      "indices": [
+        15,
+        5,
+        4,
+        14
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 331,
+      "pattern": "(e15 + e5) * (e9 - e3)",
+      "indices": [
+        15,
+        5,
+        9,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 332,
+      "pattern": "(e15 + e5) * (e14 - e4)",
+      "indices": [
+        15,
+        5,
+        14,
+        4
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 333,
+      "pattern": "(e15 + e6) * (e3 - e10)",
+      "indices": [
+        15,
+        6,
+        3,
+        10
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 334,
+      "pattern": "(e15 + e6) * (e5 - e12)",
+      "indices": [
+        15,
+        6,
+        5,
+        12
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 335,
+      "pattern": "(e15 + e6) * (e10 - e3)",
+      "indices": [
+        15,
+        6,
+        10,
+        3
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    },
+    {
+      "id": 336,
+      "pattern": "(e15 + e6) * (e12 - e5)",
+      "indices": [
+        15,
+        6,
+        12,
+        5
+      ],
+      "fully_works": true,
+      "works_left": true,
+      "works_right": true,
+      "norm_left": 2.0,
+      "norm_right": 2.0
+    }
+  ]
+}
