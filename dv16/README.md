@@ -4,9 +4,9 @@
 
 ## Overview
 
-This module implements DV¹⁶ (sedenions) with **ASTO Variant 5 (Partial Singularity Treatment)**, a novel method for handling zero divisors in the Cayley-Dickson construction beyond octonions.
+This module implements DV¹⁶ (sedenions) with **ASTO Variant 5 (Partial Singularity Treatment)**, establishing DV¹⁶ as the first non-trivial **Singularity Algebra (S-Algebra)**—a new class of algebras with explicit singularity treatment.
 
-**Status Update (December 2025):** The challenges of sedenions have been successfully addressed through ASTO Variant 5, which provides a consistent method for handling zero divisors.
+**Status Update (December 2025):** The challenges of sedenions have been successfully addressed through ASTO Variant 5. This work introduces the formal concept of **S-Algebras**, algebras equipped with operations to resolve internal singularities like zero divisors.
 
 ## Key Results
 
@@ -39,7 +39,7 @@ This module implements DV¹⁶ (sedenions) with **ASTO Variant 5 (Partial Singul
 
 **Solution:** The Cayley-Dickson construction combined with the division algebra property of octonions provides the foundation. ASTO Variant 5 leverages this structure.
 
-**Result:** New principle discovered: **Partial Singularity Treatment** for Cayley-Dickson algebras.
+**Result:** New principle discovered: **Partial Singularity Treatment** for Cayley-Dickson algebras. This establishes DV¹⁶ as the first S-Algebra and opens the path to DV³², DV⁶⁴, and beyond.
 
 ## Files
 

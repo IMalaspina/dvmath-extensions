@@ -11,7 +11,7 @@
 \geometry{a4paper, margin=1in}
 
 % Title and Author
-\title{Consistency of DV$^{16}$ via Partial Singularity Treatment: \\ A New Principle for Extending the Cayley-Dickson Construction}
+\title{Introducing Singularity Algebras (S-Algebras): \\ Consistency of DV$^{16}$ and the Extension of the Cayley-Dickson Construction}
 \author{I. Malaspina}
 \affil{DV-Mathematics Research Group}
 \date{December 7, 2025}
@@ -29,7 +29,7 @@
 \maketitle
 
 \begin{abstract}
-For over 150 years, the Cayley-Dickson construction of algebras has been considered to terminate at the 8-dimensional octonions, as the subsequent 16-dimensional sedenions lose the property of being a division algebra and introduce zero divisors, leading to a breakdown of algebraic consistency. This paper challenges that long-held conclusion. We introduce a novel method, termed Partial Singularity Treatment (ASTO Variant 5), which is an asymmetric application of the Singularity Treatment Operation (STO) within the DV-Mathematics framework. We present a formal mathematical proof demonstrating that this method universally resolves all boundary-crossing zero divisors in DV$^{16}$. The proof is constructed from first principles, relying only on the established properties of the octonions as a division algebra. Furthermore, we provide exhaustive empirical validation, showing a 100\% success rate across all 336 systematically generated zero divisor pairs. This result establishes DV$^{16}$ with Partial STO as a consistent mathematical structure and introduces a new principle of asymmetric treatment that may allow for the consistent extension of the Cayley-Dickson construction to arbitrarily high dimensions.
+For over 150 years, the Cayley-Dickson construction of algebras has been considered to terminate at the 8-dimensional octonions, as the subsequent 16-dimensional sedenions lose the property of being a division algebra and introduce zero divisors, leading to a breakdown of algebraic consistency. This paper challenges that long-held conclusion by introducing the formal concept of a **Singularity Algebra (S-Algebra)**, an algebra equipped with an explicit operation to resolve internal singularities like zero divisors. We introduce a novel method, termed Partial Singularity Treatment (ASTO Variant 5), which is an asymmetric application of the Singularity Treatment Operation (STO) within the DV-Mathematics framework. We present a formal mathematical proof demonstrating that this method universally resolves all boundary-crossing zero divisors in DV$^{16}$. The proof is constructed from first principles, relying only on the established properties of the octonions as a division algebra. Furthermore, we provide exhaustive empirical validation, showing a 100\% success rate across all 336 systematically generated zero divisor pairs. This result establishes DV$^{16}$ with Partial STO as a consistent mathematical structure and introduces a new principle of asymmetric treatment that may allow for the consistent extension of the Cayley-Dickson construction to arbitrarily high dimensions.
 \end{abstract}
 
 \section{Introduction}
@@ -38,7 +38,7 @@ The Cayley-Dickson construction is a remarkable process that generates a sequenc
 
 This property has led to the widespread view that the sedenions, and all higher-dimensional algebras from the construction, are algebraically "pathological" and of limited utility. The presence of zero divisors fundamentally undermines the algebraic structure, making division ambiguous and invalidating many standard theorems. For this reason, the octonions have long been regarded as the last "interesting" algebra in this sequence \cite{baez2002octonions}.
 
-This paper demonstrates that this conclusion is premature. Within the DV-Mathematics framework, which introduces a Singularity Treatment Operation (STO) to handle division by zero, we show that the inconsistencies of DV$^{16}$ (sedenions) can be resolved. While a standard, symmetric application of STO fails to resolve approximately 50\% of zero divisors, we introduce a new method, **ASTO Variant 5 (Partial STO)**, which applies the operation asymmetrically. We prove formally and validate empirically that this method is universally successful for a major class of zero divisors, establishing DV$^{16}$ as a consistent and well-defined mathematical structure. This work not only "repairs" the sedenions but also introduces a new, potentially generalizable principle for extending the Cayley-Dickson construction.
+This paper demonstrates that this conclusion is premature. Within the DV-Mathematics framework, which introduces a Singularity Treatment Operation (STO) to handle division by zero, we show that the inconsistencies of DV$^{16}$ (sedenions) can be resolved. While a standard, symmetric application of STO fails to resolve approximately 50\% of zero divisors, we introduce a new method, **ASTO Variant 5 (Partial STO)**, which applies the operation asymmetrically. We prove formally and validate empirically that this method is universally successful for a major class of zero divisors, establishing DV$^{16}$ as a consistent and well-defined mathematical structure. This work defines DV$^{16}$ as the first non-trivial S-Algebra, repairs the sedenions, and introduces a new principle for constructing a potentially infinite sequence of consistent S-Algebras.
 
 \section{Preliminaries and Definitions}
 
@@ -181,6 +181,16 @@ To support the formal proof, we conducted exhaustive empirical tests. A systemat
 \end{itemize}
 
 The empirical results perfectly match the conclusion of our formal proof: ASTO$_{5}$ is a universal and consistent method for resolving all 336 boundary-crossing zero divisors. The full dataset and testing scripts are available in the supplementary materials.
+
+\section{Singularity Algebras: A New Class of Algebraic Structures}
+
+The consistency of DV$^{16}$ motivates the definition of a new class of algebras designed to handle internal singularities.
+
+\begin{definition}[Singularity Algebra (S-Algebra)]
+A **Singularity Algebra (S-Algebra)** is a tuple $(\mathcal{A}, +, \cdot, \text{STO})$, where $(\mathcal{A}, +, \cdot)$ is an algebra and $\text{STO}: \mathcal{A} \to \mathcal{A}$ is a Singularity Treatment Operation that resolves the algebra's zero divisors, thereby restoring a form of algebraic consistency.
+\end{definition}
+
+DV-Algebras, such as DV$^{16}$ with ASTO$_5$, are a specific family of S-Algebras. This framework reframes the Cayley-Dickson construction not as a process that 'breaks', but as one that generates S-Algebras of increasing complexity.
 
 \section{Discussion and Implications}
 

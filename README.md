@@ -4,9 +4,9 @@
 
 ---
 
-## 🎉 Major Update: DV¹⁶ is Now VALIDATED
+## 🎉 Major Update: Introducing Singularity Algebras (S-Algebras)
 
-**December 2025:** We have successfully extended the DV-Mathematics framework to 16 dimensions with a novel method called **Partial Singularity Treatment (ASTO Variant 5)**. This breakthrough demonstrates that the Cayley-Dickson construction can be consistently extended beyond octonions.
+**December 2025:** We introduce the formal concept of **Singularity Algebras (S-Algebras)**, a new class of algebras equipped with explicit operations to resolve internal singularities. DV¹⁶ with **Partial Singularity Treatment (ASTO Variant 5)** is the first non-trivial S-Algebra, demonstrating that the Cayley-Dickson construction can be consistently extended beyond octonions.
 
 **Key Results:**
 - ✓ **100% Success Rate**: All 336 systematically generated zero divisors successfully resolved
@@ -40,10 +40,11 @@ Partial Singularity Treatment (ASTO Variant 5) applies the Singularity Treatment
 
 **Mathematical Significance:**
 
-This work demonstrates that:
-1. The Cayley-Dickson construction can be extended beyond octonions with proper singularity treatment
-2. Asymmetric singularity treatment is a new principle in algebra
-3. DV¹⁶ is the first consistent 16-dimensional normed algebra with zero divisor handling
+This work introduces:
+1. **Singularity Algebras (S-Algebras)**: A new class of algebras with explicit singularity treatment
+2. **Asymmetric Treatment Principle**: Breaking symmetry to resolve zero divisors
+3. **DV¹⁶ as First S-Algebra**: The first non-trivial example of a consistent S-Algebra
+4. **Infinite Extension**: A pathway to DV³², DV⁶⁴, and beyond
 
 **Citation:**
 
