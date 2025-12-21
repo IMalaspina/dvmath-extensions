@@ -5,6 +5,39 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0] - 2025-12-21
+
+### 🎉 Major Update: ASTO₅ Dual Proof and 84 Canonical Zero Divisors
+
+This release corrects the zero divisor count and adds the dual proof for ASTO₅.
+
+#### Added
+- **84 Canonical Zero Divisors**: Complete list from mathematical literature (Wikipedia, Reggiani 2024)
+- **Dual ASTO₅ Proof**: Both left (`e₁ × a`) and right (`a × e₁`) multiplication validated
+- **High Precision Implementation**: 50-digit Decimal arithmetic (Titan implementation)
+- **Formal Proof Document**: `docs/ASTO5_DUAL_PROOF_DE.pdf`
+- **Validation Reports**: Complete documentation in `docs/`
+- **Titan Reference Implementation**: `dv16_titan.py`, `dv16_titan_extended.py`
+- **Structure Probe**: `dv16_structure_probe.py` for chirality analysis
+
+#### Changed
+- **Zero Divisor Count**: Corrected from 336 to **84 canonical pairs**
+- **dv16.py**: Complete rewrite with validated Cayley-Dickson construction
+- **asto.py**: Updated with correct ASTO₅ definition and documentation
+- **README.md**: Comprehensive update with correct statistics
+
+#### Fixed
+- Cayley-Dickson multiplication formula alignment with literature
+- Import paths (removed hardcoded paths)
+- Zero divisor pair definitions to match Wikipedia/Reggiani
+
+#### Notes
+- The 336 count in v1.0.0 included permutations; the **84 canonical pairs** are the unique forms
+- Both left and right ASTO₅ variants achieve 100% success rate
+- G₂ invariance remains an open question for non-canonical zero divisors
+
+---
+
 ## [1.0.0] - 2025-12-07
 
 ### Added - DV¹⁶ VALIDATED ✓
