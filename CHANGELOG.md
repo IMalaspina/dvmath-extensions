@@ -5,6 +5,52 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.2.0] - 2025-12-22
+
+### ⚠️ CRITICAL CORRECTION: ASTO₅ Success Rate
+
+This release corrects a significant error in the reported ASTO₅ success rate.
+
+#### Critical Finding
+- **Previous claim**: ASTO₅ on A achieves 100% success
+- **Actual result**: ASTO₅ on A achieves **85.7%** (72/84 pairs)
+- **Solution**: Adaptive ASTO₅ achieves **100%** (84/84 pairs)
+
+#### The 12 Failing Pairs (all contain e₉)
+```
+(e2 + e12) × (e7 + e9)    (e3 + e12) × (e6 - e9)
+(e2 + e13) × (e6 - e9)    (e3 + e14) × (e4 + e9)
+(e2 + e14) × (e5 + e9)    (e3 + e15) × (e5 + e9)
+(e2 + e15) × (e4 - e9)    (e3 + e13) × (e7 - e9)
+(e4 + e10) × (e7 - e9)    (e5 + e10) × (e6 + e9)
+(e4 + e11) × (e6 + e9)    (e5 + e11) × (e7 + e9)
+```
+
+#### Added
+- `asto5_adaptive()`: New function that achieves 100% success
+- `analyze_asto5_failures.py`: Detailed analysis of failing pairs
+- `test_combined_asto_strategies.py`: Comprehensive strategy comparison
+- `ASTO5_A_FAILURES` list in asto.py documenting the 12 failing pairs
+
+#### Changed
+- **asto.py**: Complete rewrite with adaptive strategy and accurate statistics
+- **README.md**: Corrected all success rate claims
+- **canonical_zero_divisors.py**: Now uses JSON file directly
+
+#### Statistics
+| Strategy | Success Rate |
+|----------|-------------|
+| ASTO₅ on A | 72/84 (85.7%) |
+| ASTO₅ on B | 48/84 (57.1%) |
+| **Adaptive** | **84/84 (100%)** |
+
+#### Significance
+- The core claim (zero divisors can be resolved) remains TRUE
+- The method (adaptive ASTO₅) is slightly more complex than originally stated
+- Scientific integrity maintained through transparent correction
+
+---
+
 ## [2.1.0] - 2025-12-22
 
 ### 🎉 Universal Proof: ASTO₅ Validated on Entire G₂ Manifold

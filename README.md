@@ -7,32 +7,49 @@
 
 **Author:** Ivano Franco Malaspina  
 **Date:** December 2025  
-**Version:** 2.1.0
+**Version:** 2.2.0
 
 ---
 
-## 🎉 UNIVERSAL PROOF: ASTO₅ Validated on Entire G₂ Manifold
+## ⚠️ IMPORTANT CORRECTION (December 22, 2025)
 
-**December 22, 2025:** We announce the **universal proof** of ASTO₅ effectiveness on the entire zero divisor manifold!
+The previous claim that "ASTO₅ achieves 100% success when applied to A" was **INCORRECT**.
+
+**Corrected Statistics:**
+
+| Strategy | Success Rate | Details |
+|----------|--------------|---------|
+| ASTO₅ on A only | **72/84 (85.7%)** | 12 pairs fail |
+| ASTO₅ on B only | **48/84 (57.1%)** | 36 pairs fail |
+| **Adaptive ASTO₅** | **84/84 (100%)** ✅ | Try A, if fails try B |
+
+**The 12 pairs where ASTO on A fails all contain e₉ in the second factor.**
+
+**Solution:** Use `asto5_adaptive(A, B)` for guaranteed 100% success.
+
+---
+
+## 🎉 ADAPTIVE ASTO₅: 100% Success on All Zero Divisors
+
+**December 22, 2025:** We announce the **adaptive ASTO₅ strategy** that achieves 100% success!
+
+**Algorithm:**
+```python
+def asto5_adaptive(A, B):
+    # Try ASTO on A first
+    if (asto5(A) * B).norm() > 0:
+        return asto5(A), B, "A"
+    # If fails, try ASTO on B
+    if (A * asto5(B)).norm() > 0:
+        return A, asto5(B), "B"
+    return None, None, "FAIL"  # Never happens for canonical pairs
+```
 
 **Key Results:**
-- ✅ **4200 G₂-transformed zero divisors** tested with 100% success rate
-- ✅ **Universal Proof**: ASTO₅ works on ALL zero divisors, not just canonical
-- ✅ **Dual Proof**: Both left (`e₁ × a`) and right (`a × e₁`) multiplication work
-- ✅ **Formal + Empirical**: Combined algebraic proof and G₂ invariance testing
-- ✅ **High Precision**: G₂ automorphism verified (max error: 4.04×10⁻¹⁵)
-
-**📄 Full Paper:** See `docs/ASTO5_UNIVERSAL_PROOF_PAPER_EN.pdf`
-
-**What is ASTO₅?**
-
-ASTO₅ (Adaptive STO Variant 5) applies the Singularity Treatment Operation asymmetrically to only the first octonion component:
-
-```
-ASTO₅(a, b) = (e₁ × a, b)
-```
-
-This breaks the destructive interference that creates zero divisors.
+- ✅ **72 pairs**: ASTO on A works
+- ✅ **12 pairs**: ASTO on B works (all contain e₉)
+- ✅ **0 pairs**: Both fail
+- ✅ **100% total success** with adaptive strategy
 
 ---
 
@@ -40,7 +57,7 @@ This breaks the destructive interference that creates zero divisors.
 
 ### `/dv16/` — DV¹⁶ (Sedenions) ✅ VALIDATED
 
-**Status:** ✅ **VALIDATED** — 84/84 canonical zero divisors (100%)
+**Status:** ✅ **VALIDATED** — 84/84 canonical zero divisors (100% with adaptive ASTO₅)
 
 The 16-dimensional extension of DV-Mathematics, implementing sedenions with ASTO₅.
 
@@ -48,15 +65,15 @@ The 16-dimensional extension of DV-Mathematics, implementing sedenions with ASTO
 | File | Description |
 |------|-------------|
 | `dv16.py` | Main DV¹⁶ implementation (Cayley-Dickson) |
-| `asto.py` | ASTO₅ implementation (validated) |
+| `asto.py` | ASTO₅ implementation with adaptive strategy |
 | `canonical_zero_divisors.py` | All 84 canonical zero divisor pairs |
-| `test_asto_exhaustive.py` | Exhaustive validation tests |
+| `literature_84_pairs.json` | JSON data of all 84 pairs |
 
 **Quick Start:**
 
 ```python
 from dv16.dv16 import DV16, e
-from dv16.asto import asto5
+from dv16.asto import asto5, asto5_adaptive
 
 # Create a zero divisor pair
 A = e(1) + e(10)  # e₁ + e₁₀
@@ -65,11 +82,10 @@ B = e(5) + e(14)  # e₅ + e₁₄
 # Verify it's a zero divisor
 print((A * B).norm())  # Output: 0.0
 
-# Apply ASTO₅
-A_treated = asto5(A)
-
-# Verify treatment works
-print((A_treated * B).norm())  # Output: 2.0 (non-zero!)
+# Use adaptive ASTO₅ for guaranteed success
+A_new, B_new, which = asto5_adaptive(A, B)
+print(f"Applied ASTO to: {which}")
+print((A_new * B_new).norm())  # Output: 2.0 (non-zero!)
 ```
 
 ---
@@ -111,7 +127,7 @@ All zero divisors have the form: `(eᵢ + eⱼ) × (eₖ ± eₗ) = 0`
 
 ---
 
-## Why ASTO₅ Works
+## Why ASTO₅ Works (and When It Doesn't)
 
 ### The Zero Divisor Condition
 
@@ -135,22 +151,28 @@ The associator `[e₁, a, c] ≠ 0` for most octonion triplets, so:
 
 Therefore, the zero divisor condition is broken.
 
-### Formal Proof
+### When ASTO on A Fails
 
-See `docs/ASTO5_DUAL_PROOF_DE.pdf` for the complete mathematical proof.
+For 12 specific pairs (all containing e₉ in B), the associator happens to be zero or the transformation preserves the zero divisor condition. In these cases, applying ASTO to B instead works.
+
+**Pattern:** All 12 failures have the form `(eₓ + eᵧ) × (eₖ ± e₉)` where:
+- x ∈ {2, 3, 4, 5} (first octonion)
+- y ∈ {10, 11, 12, 13, 14, 15} (second octonion)
+- k ∈ {4, 5, 6, 7} (first octonion)
+- e₉ is always present (first element of second octonion)
 
 ---
 
 ## S-Algebra (Singularity Algebra)
 
-DV¹⁶ with ASTO₅ forms the first non-trivial **S-Algebra**:
+DV¹⁶ with adaptive ASTO₅ forms the first non-trivial **S-Algebra**:
 
 **Definition:** An S-Algebra is an algebra `(A, +, ×, σ)` where:
 1. `(A, +, ×)` is a (possibly non-associative) algebra
-2. `σ: A → A` is a singularity treatment operation
-3. For any zero divisor pair `(x, y)`: `σ(x) × y ≠ 0` and `x × σ(y) ≠ 0`
+2. `σ: A × A → A × A` is a singularity treatment operation
+3. For any zero divisor pair `(x, y)`: `σ(x, y) = (x', y')` such that `x' × y' ≠ 0`
 
-**S¹⁶ = (DV¹⁶, +, ×, ASTO₅)** satisfies all conditions.
+**S¹⁶ = (DV¹⁶, +, ×, ASTO₅_adaptive)** satisfies all conditions.
 
 ---
 
@@ -162,8 +184,9 @@ DV¹⁶ with ASTO₅ forms the first non-trivial **S-Algebra**:
 |------|--------|---------|
 | **Cayley-Dickson** | ✅ PASS | Correct multiplication formula |
 | **84 Zero Divisors** | ✅ PASS | All confirmed from literature |
-| **ASTO₅ Left** | ✅ PASS | 84/84 (100%) |
-| **ASTO₅ Right** | ✅ PASS | 84/84 (100%) |
+| **ASTO₅ on A** | ⚠️ 85.7% | 72/84 pairs |
+| **ASTO₅ on B** | ⚠️ 57.1% | 48/84 pairs |
+| **Adaptive ASTO₅** | ✅ 100% | 84/84 pairs |
 | **Norm Preservation** | ✅ PASS | ASTO₅ preserves norms |
 | **Numerical Stability** | ✅ PASS | 50-digit precision |
 
@@ -181,14 +204,14 @@ python3 canonical_zero_divisors.py # Full 84-pair test
 ## Future Work
 
 ### Immediate
-- [ ] Publish formal paper on ASTO₅
-- [ ] Integrate into main `dvmath` library
-- [ ] Develop comprehensive test suite
+- [x] ~~Validate ASTO₅ on 84 canonical zero divisors~~
+- [x] ~~Correct documentation with accurate statistics~~
+- [ ] Publish formal paper on adaptive ASTO₅
 
 ### Short-term
-- [ ] Test ASTO₅ on non-canonical zero divisors (G₂ manifold)
-- [ ] Extend to DV³² (32 dimensions)
-- [ ] Investigate geometric interpretation
+- [ ] Extend to DV³² (32 dimensions, 1260 zero divisors)
+- [ ] Investigate why e₉ pairs fail with ASTO on A
+- [ ] Develop formal proof for adaptive strategy
 
 ### Long-term
 - [ ] Establish general principle for DV^n
@@ -199,9 +222,10 @@ python3 canonical_zero_divisors.py # Full 84-pair test
 
 ## Open Questions (Updated December 22, 2025)
 
-1. **G₂ Invariance:** ✅ **ANSWERED** — Yes! ASTO₅ works on ALL zero divisors (4200 G₂-transformed pairs tested, 100% success)
-2. **Completeness:** ✅ **ANSWERED** — No zero divisors with ≥3 basis elements found (1000 random combinations tested)
-3. **DV³²:** ⏳ **OPEN** — Can ASTO₅ be extended to 32 dimensions? (Next research target)
+1. **ASTO on A failures:** ✅ **IDENTIFIED** — 12 pairs with e₉ fail, ASTO on B works
+2. **Completeness:** ✅ **ANSWERED** — No zero divisors with ≥3 basis elements found
+3. **DV³²:** ⏳ **OPEN** — Can adaptive ASTO₅ be extended to 32 dimensions?
+4. **Why e₉?:** ⏳ **OPEN** — Why do exactly the e₉ pairs fail with ASTO on A?
 
 ---
 
@@ -210,7 +234,7 @@ python3 canonical_zero_divisors.py # Full 84-pair test
 ```bibtex
 @misc{malaspina2025dv16,
   author = {Malaspina, Ivano Franco},
-  title = {DV¹⁶ Validation with ASTO₅: A Universal Solution for Sedenion Zero Divisors},
+  title = {DV¹⁶ Validation with Adaptive ASTO₅: A Universal Solution for Sedenion Zero Divisors},
   year = {2025},
   publisher = {GitHub},
   url = {https://github.com/IMalaspina/dvmath-extensions}
@@ -235,17 +259,22 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Changelog
 
-### v2.0.0 (December 2025) — **Current**
-- **ASTO₅ Validated:** 100% success rate on 84 canonical zero divisors
-- **Dual Proof:** Both left and right multiplication work
-- **High Precision:** 50-digit Decimal implementation
-- **Complete Documentation:** All 84 zero divisors listed
-- **Code Cleanup:** Removed experimental warnings, updated status
+### v2.2.0 (December 22, 2025) — **Current**
+- **CRITICAL CORRECTION:** ASTO₅ on A achieves 85.7%, not 100%
+- **Adaptive Strategy:** Introduced `asto5_adaptive()` for 100% success
+- **Pattern Identified:** 12 failing pairs all contain e₉
+- **Updated Documentation:** Accurate statistics throughout
+
+### v2.1.0 (December 22, 2025)
+- Universal Proof paper added
+- G₂ invariance testing (4200 pairs)
+
+### v2.0.0 (December 2025)
+- ASTO₅ implementation
+- 84 canonical zero divisors documented
 
 ### v1.0.0 (November 2025)
 - Initial release with experimental DV¹⁶ implementation
-- ASTO variants 1-6 exploration
-- Preliminary validation
 
 ---
 
