@@ -5,49 +5,46 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.2.0] - 2025-12-22
+## [2.3.0] - 2025-12-22
 
-### ⚠️ CRITICAL CORRECTION: ASTO₅ Success Rate
+### ✅ CORRECTION: ASTO₅ Achieves 100% on ALL Pairs
 
-This release corrects a significant error in the reported ASTO₅ success rate.
+This release corrects the erroneous v2.2.0 which claimed 12 pairs failed.
 
-#### Critical Finding
-- **Previous claim**: ASTO₅ on A achieves 100% success
-- **Actual result**: ASTO₅ on A achieves **85.7%** (72/84 pairs)
-- **Solution**: Adaptive ASTO₅ achieves **100%** (84/84 pairs)
+#### What Happened
+- v2.2.0 claimed that 12 pairs with e₉ failed with ASTO on A
+- **This was WRONG** - the "failures" were due to incorrect data in `canonical_zero_divisors.py`
+- The `literature_84_pairs.json` file was always correct
+- When using the correct JSON data, **ALL 84 pairs succeed**
 
-#### The 12 Failing Pairs (all contain e₉)
-```
-(e2 + e12) × (e7 + e9)    (e3 + e12) × (e6 - e9)
-(e2 + e13) × (e6 - e9)    (e3 + e14) × (e4 + e9)
-(e2 + e14) × (e5 + e9)    (e3 + e15) × (e5 + e9)
-(e2 + e15) × (e4 - e9)    (e3 + e13) × (e7 - e9)
-(e4 + e10) × (e7 - e9)    (e5 + e10) × (e6 + e9)
-(e4 + e11) × (e6 + e9)    (e5 + e11) × (e7 + e9)
-```
-
-#### Added
-- `asto5_adaptive()`: New function that achieves 100% success
-- `analyze_asto5_failures.py`: Detailed analysis of failing pairs
-- `test_combined_asto_strategies.py`: Comprehensive strategy comparison
-- `ASTO5_A_FAILURES` list in asto.py documenting the 12 failing pairs
-
-#### Changed
-- **asto.py**: Complete rewrite with adaptive strategy and accurate statistics
-- **README.md**: Corrected all success rate claims
-- **canonical_zero_divisors.py**: Now uses JSON file directly
-
-#### Statistics
+#### Verified Results
 | Strategy | Success Rate |
 |----------|-------------|
-| ASTO₅ on A | 72/84 (85.7%) |
-| ASTO₅ on B | 48/84 (57.1%) |
-| **Adaptive** | **84/84 (100%)** |
+| ASTO₅ on A | **84/84 (100%)** ✅ |
+| ASTO₅ on B | **84/84 (100%)** ✅ |
+| Both work | **84/84 (100%)** ✅ |
 
-#### Significance
-- The core claim (zero divisors can be resolved) remains TRUE
-- The method (adaptive ASTO₅) is slightly more complex than originally stated
-- Scientific integrity maintained through transparent correction
+#### Fixed
+- `canonical_zero_divisors.py`: Now correctly loads from `literature_84_pairs.json`
+- `asto.py`: Removed incorrect "adaptive" strategy (not needed)
+- `README.md`: Restored correct 100% statistics
+
+#### Lesson Learned
+Always verify test data against the authoritative source (the JSON file from literature).
+The Python file had transcription errors that caused false "failures".
+
+---
+
+## [2.2.0] - 2025-12-22 ⚠️ RETRACTED
+
+### ⚠️ RETRACTED: Incorrect claim of 12 failing pairs
+
+**This release contained incorrect information due to data errors.**
+
+The claimed "12 failing pairs" were not actual failures of ASTO₅, but rather
+incorrectly constructed pairs from a buggy `canonical_zero_divisors.py` file.
+
+See v2.3.0 for the correction.
 
 ---
 
