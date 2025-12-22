@@ -78,6 +78,35 @@ print((A_new * B_new).norm())  # Output: 2.0
 
 ---
 
+## 📚 Research Documentation
+
+### Core Papers
+
+| Document | Description |
+|----------|-------------|
+| [`ASTO5_UNIVERSAL_PROOF_PAPER_EN.pdf`](docs/ASTO5_UNIVERSAL_PROOF_PAPER_EN.pdf) | **Universal Proof** of ASTO₅ effectiveness (English) |
+| [`ASTO5_UNIVERSAL_PROOF_PAPER_DE.pdf`](docs/ASTO5_UNIVERSAL_PROOF_PAPER_DE.pdf) | **Universal Proof** of ASTO₅ effectiveness (German) |
+| [`G2_INVARIANCE_REPORT_DE.pdf`](docs/G2_INVARIANCE_REPORT_DE.pdf) | **G₂ Invariance Testing** - 4200 tests on G₂-transformed pairs |
+| [`ASTO5_DUAL_PROOF_DE.pdf`](docs/ASTO5_DUAL_PROOF_DE.pdf) | **Dual Proof** - Why both left and right multiplication work |
+
+### Research Background
+
+| Document | Description |
+|----------|-------------|
+| [`Analyse_der_arXiv-Papers_zu_Sedenionen_und_Nullteilern.pdf`](docs/research/Analyse_der_arXiv-Papers_zu_Sedenionen_und_Nullteilern.pdf) | Analysis of arXiv papers on sedenions and zero divisors |
+| [`Universeller_Beweis_für_die_Wirksamkeit_von_ASTO₅_auf_der_Nullteiler-Mannigfaltigkeit_der_Sedenionen.pdf`](docs/research/Universeller_Beweis_für_die_Wirksamkeit_von_ASTO₅_auf_der_Nullteiler-Mannigfaltigkeit_der_Sedenionen.pdf) | Universal proof for ASTO₅ on the zero divisor manifold (German) |
+
+### Validation Scripts
+
+| Script | Purpose |
+|--------|--------|
+| `dv16/g2_asto5_test_v2.py` | G₂ invariance testing (4200 pairs) |
+| `dv16/verify_all_implementations.py` | Comprehensive verification of all implementations |
+| `dv16/verify_formal_proof.py` | Verification of formal proof claims |
+| `dv16/g2_full_test_results.json` | Complete G₂ test results data |
+
+---
+
 ### `/physics/` — Hypothetical Applications ⚠️ SPECULATIVE
 
 **Status:** ⚠️ **SPECULATIVE** — Theoretical exploration, not validated
