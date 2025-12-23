@@ -236,13 +236,47 @@ def get_zero_divisor_pair(index: int) -> Tuple['_Sedenion', '_Sedenion']:
 
 
 def asto5_left(s: '_Sedenion') -> '_Sedenion':
-    """Apply ASTO₅ (left multiplication by e₁ on first octonion)."""
-    return _e(1) * s
+    """
+    Apply ASTO₅ (left multiplication by e₁ on first octonion ONLY).
+    
+    ASTO₅(a, b) = (e₁ × a, b)
+    
+    This is the CORRECT implementation that only transforms the first octonion.
+    """
+    # Get the two octonion halves
+    a = _Octonion(*s.components[0:8])
+    b = _Octonion(*s.components[8:16])
+    
+    # Create e₁ as an octonion (not sedenion!)
+    e1_oct = _Octonion(0, 1, 0, 0, 0, 0, 0, 0)
+    
+    # Apply STO only to first octonion: a' = e₁ × a
+    a_prime = e1_oct * a
+    
+    # Return (a', b) - second octonion unchanged!
+    return _Sedenion(*a_prime.components, *b.components)
 
 
 def asto5_right(s: '_Sedenion') -> '_Sedenion':
-    """Apply ASTO₅ (right multiplication by e₁ on first octonion)."""
-    return s * _e(1)
+    """
+    Apply ASTO₅ (right multiplication by e₁ on first octonion ONLY).
+    
+    ASTO₅_right(a, b) = (a × e₁, b)
+    
+    This variant also achieves 100% success rate.
+    """
+    # Get the two octonion halves
+    a = _Octonion(*s.components[0:8])
+    b = _Octonion(*s.components[8:16])
+    
+    # Create e₁ as an octonion
+    e1_oct = _Octonion(0, 1, 0, 0, 0, 0, 0, 0)
+    
+    # Apply STO only to first octonion: a' = a × e₁
+    a_prime = a * e1_oct
+    
+    # Return (a', b) - second octonion unchanged!
+    return _Sedenion(*a_prime.components, *b.components)
 
 
 # ============================================================

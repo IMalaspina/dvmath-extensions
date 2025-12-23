@@ -38,23 +38,23 @@ VALIDATION RESULTS:
 
 import json
 import os
-from typing import Tuple, Optional
+from typing import Tuple
 
-# Import the DV16 implementation
+# Import the TitanSedenion implementation
 try:
-    from .dv16 import Sedenion, e, e_oct
+    from .dv16_titan import TitanSedenion, e
 except ImportError:
-    from dv16 import Sedenion, e, e_oct
+    from dv16_titan import TitanSedenion, e
 
 
-def asto5(S: Sedenion) -> Sedenion:
+def asto5(S: TitanSedenion) -> TitanSedenion:
     """
     Apply ASTO₅ to a sedenion.
     
     ASTO₅(a, b) = (e₁ × a, b)
     
     Args:
-        S: A sedenion (a, b) where a, b are octonions
+        S: A TitanSedenion (a, b) where a, b are octonions
         
     Returns:
         A new sedenion with the first octonion multiplied by e₁
@@ -64,32 +64,28 @@ def asto5(S: Sedenion) -> Sedenion:
         >>> A_treated = asto5(A)
         >>> # Now A_treated × B ≠ 0 for any zero divisor pair (A, B)
     """
-    e1_oct = e_oct(1)
-    a_prime = e1_oct * S.a
-    return Sedenion(*a_prime.components, *S.b.components)
+    return S.asto5()
 
 
-def asto5_left(S: Sedenion) -> Sedenion:
+def asto5_left(S: TitanSedenion) -> TitanSedenion:
     """
     Apply ASTO₅ using left multiplication: (e₁ × a, b)
     
     This is the canonical form of ASTO₅.
     """
-    return asto5(S)
+    return S.asto5()
 
 
-def asto5_right(S: Sedenion) -> Sedenion:
+def asto5_right(S: TitanSedenion) -> TitanSedenion:
     """
     Apply ASTO₅ using right multiplication: (a × e₁, b)
     
     This variant also achieves 100% success rate.
     """
-    e1_oct = e_oct(1)
-    a_prime = S.a * e1_oct
-    return Sedenion(*a_prime.components, *S.b.components)
+    return S.asto5_right()
 
 
-def resolve_zero_divisor(A: Sedenion, B: Sedenion) -> Tuple[Sedenion, Sedenion, str]:
+def resolve_zero_divisor(A: TitanSedenion, B: TitanSedenion) -> Tuple[TitanSedenion, TitanSedenion, str]:
     """
     Resolve a zero divisor pair using ASTO₅.
     
@@ -110,53 +106,21 @@ def resolve_zero_divisor(A: Sedenion, B: Sedenion) -> Tuple[Sedenion, Sedenion, 
         canonical zero divisors. Applying to B also works for all pairs.
     """
     # Apply ASTO to A (works for all 84 canonical pairs)
-    A_asto = asto5(A)
+    A_asto = A.asto5()
     product = A_asto * B
     
-    if product.norm() > 1e-10:
+    if product.norm() > 0.1:
         return A_asto, B, "A"
     
     # Fallback: Apply to B (also works for all pairs)
-    B_asto = asto5(B)
+    B_asto = B.asto5()
     product = A * B_asto
     
-    if product.norm() > 1e-10:
+    if product.norm() > 0.1:
         return A, B_asto, "B"
     
     # This should never happen for valid zero divisor pairs
     raise ValueError("ASTO₅ failed to resolve zero divisor - pair may not be a valid zero divisor")
-
-
-# ============================================================
-# LEGACY ASTO VARIANTS (for reference)
-# ============================================================
-
-def asto1(S: Sedenion) -> Sedenion:
-    """ASTO Variant 1: Full STO on both components (DOES NOT WORK)"""
-    e1_oct = e_oct(1)
-    a_prime = e1_oct * S.a
-    b_prime = e1_oct * S.b
-    return Sedenion(*a_prime.components, *b_prime.components)
-
-
-def asto2(S: Sedenion) -> Sedenion:
-    """ASTO Variant 2: STO on second component only (DOES NOT WORK)"""
-    e1_oct = e_oct(1)
-    b_prime = e1_oct * S.b
-    return Sedenion(*S.a.components, *b_prime.components)
-
-
-def asto3(S: Sedenion) -> Sedenion:
-    """ASTO Variant 3: Conjugate-based (DOES NOT WORK)"""
-    return S.conjugate()
-
-
-def asto4(S: Sedenion) -> Sedenion:
-    """ASTO Variant 4: Norm-based scaling (DOES NOT WORK)"""
-    norm = S.norm()
-    if norm < 1e-10:
-        return S
-    return Sedenion(*[c / norm for c in S.components])
 
 
 # ============================================================
@@ -190,27 +154,27 @@ def validate_asto5():
         l_abs = abs(l)
         
         A = e(i) + e(j)
-        B = e(k) + sign * e(l_abs)
+        B = e(k) + e(l_abs) if sign > 0 else e(k) - e(l_abs)
         
         # Verify it's a zero divisor
         original = A * B
-        if original.norm() > 1e-10:
+        if original.norm() > 0.1:
             results['failures'].append({
                 'pair': f"(e{i} + e{j}) × (e{k} {'+' if sign > 0 else '-'} e{l_abs})",
                 'reason': 'Not a zero divisor',
-                'norm': original.norm()
+                'norm': float(original.norm())
             })
             continue
         
         # Test ASTO on A
-        A_asto = asto5(A)
+        A_asto = A.asto5()
         product_A = A_asto * B
-        A_works = product_A.norm() > 1e-10
+        A_works = product_A.norm() > 0.1
         
         # Test ASTO on B
-        B_asto = asto5(B)
+        B_asto = B.asto5()
         product_B = A * B_asto
-        B_works = product_B.norm() > 1e-10
+        B_works = product_B.norm() > 0.1
         
         if A_works:
             results['asto_A_success'] += 1
@@ -223,8 +187,8 @@ def validate_asto5():
             results['failures'].append({
                 'pair': f"(e{i} + e{j}) × (e{k} {'+' if sign > 0 else '-'} e{l_abs})",
                 'reason': 'ASTO failed on both A and B',
-                'asto_A_norm': product_A.norm(),
-                'asto_B_norm': product_B.norm()
+                'asto_A_norm': float(product_A.norm()),
+                'asto_B_norm': float(product_B.norm())
             })
     
     return results
